@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/34cf304f66.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/bolsa-shop.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="row">
+                    <nav>
+                        <div class="boton-bolsa">
+                            <a id="look-bolsa2" class="look-bolsa2" href="#"><i class="fas fa-shopping-bag"></i> <span>0.00</span> </a>                            
+                                <div id="container-bolsa2" class="container-bolsa">
+                                    <div class="bolsa-header">
+                                        <h1>Bolsa de Compras</h1>
+                                        <a id="cerrar-bolsa" class="cerrar-bolsa" href="#"><i class="fas fa-times"></i></a>
+                                    </div>
+                                    <div id="solo-table" class="table">
+                                        <div class="look-table">
+                                            <table id="productos-agregados" class="table-bolsa">
+                                                <thead>
+                                                    <tr>
+                                                        <th style="max-width: 100PX;">Imagen</th>
+                                                        <th style="width: 200px; max-width: 200px;">Nombre</th>
+                                                        <th style="width: 85px; max-width: 85px;">Precio</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                </tbody>                                
+                                            </table>
+                                        </div>
+                                        
+                                        <div class="enlaces-bolsa">
+                                            <div class="totales">
+                                                <h2>Total a Pagar:</h2>
+                                                <h2>$<span>0.00</span></h2>
+                                            </div>
+                                            <a id="vaciar-bolsa" href="#">Vaciar Bolsa</a>
+                                            <a id="pagar-productos" href="#">Pagar ahora</a>
+                                        </div>
+                                    </div>
+                                </div>                            
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <script src="../JS/verBolsa.js"></script>
+    <script src="../JS/pedido.js"></script>
+    <script src="../JS/bolsa.js"></script>
+</body>
+</html>

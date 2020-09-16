@@ -1,0 +1,157 @@
+/*========PRODUCTOS========*/
+.carrito{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 600px;
+}
+
+.columna{
+    color: #006be4;
+    max-width: 185px;
+    height: 325px;
+    padding: 5px 10px 25px 10px;
+    border: 2px solid #016be4;
+    border-radius: 16px;
+    margin: 15px 10px;
+}
+    .columna .cont-images{
+        display: flex;
+        width: 185px;
+        height: 185px; 
+        align-items: center;         
+        text-align: center;
+        line-height: 185px;
+    }
+    .columna .cont-images img{
+        max-width: 165px;
+        max-height: 165px;
+        align-items: center;
+    }
+
+.columna hr{
+    padding: 1.5px;
+    background: #016be4;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+#id-product{
+    display: none;
+}
+.t-prod{
+    width: 185px;
+    height: 50px;
+    max-height: 50px;
+    display: flex;
+    flex-flow: row;
+}
+.descrip{
+    font-size: 17px;
+    color: #016be4;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.pvp-product{
+    color: #016be4;
+    font-size: 26px;
+    padding: 10px 0 5px 0;    
+    display: flex;
+}.pvp-product>strong{margin: 0 5px;}
+
+.columna .btn-bolsa-agregar{
+    color: #fff;
+    background-color: #016be4;
+    padding: 10px 10px;
+    border-radius: 15px;
+    text-align: center;
+    width: 165px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.columna .btn-bolsa-agregar i{
+    margin-right: 10px;
+}
+
+
+
+/*listado de productos agregado a la bolsa por el cliente*/
+.contenedor-list-bolsa{
+    position: fixed;
+    width: 400px;
+    height: 450px;
+    border: 2px solid #016be4;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-family: Bahnschrift;
+    background-color: #fff;
+}
+
+.contenedor-list-bolsa .cerrar-bolsa{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    align-items: center;
+    font-size: 20px;
+    background-color: #016be4;
+    padding: 10px 18px;
+}
+    .contenedor-list-bolsa p{
+        margin: 0;
+    }
+.contenedor-list-bolsa .lista-productos{
+    color: #222222;
+    display: block;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #016be4;
+    margin: 10px;
+    min-height: 275px;
+    max-height: 275px;
+    border-radius: 15px;
+}
+    .lista-productos table{
+        width: 350px;
+        margin: 0;
+        max-height: 275px;
+        justify-content: center;
+        text-align: center;
+    }
+.contenedor-list-bolsa .total-bolsa{
+    width: 100%;
+    color: #fff;
+    align-items: center;
+    font-size: 20px;
+    background-color: #016be4;
+    position: absolute;
+    bottom: 0;
+}
+    .total-bolsa .valor{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 18px;
+    }
+    .contenedor-list-bolsa .botones-bolsa{
+        width: 100%;
+        display: flex;
+    }
+    .contenedor-list-bolsa .botones-bolsa a{
+        width: 50%;
+        display: block;
+        border: 1px solid #016be4;
+        color: #016be4;
+        text-decoration: none;
+        text-align: center;
+        align-content: center;
+        padding: 10px 0px;
+        background-color: #fff;
+        font-size: 20px;
+    }
+    .contenedor-list-bolsa .botones-bolsa a:hover{
+        background-color: #016be4;
+        color: #fff;
+        border: 1px solid #fff;
+    }
